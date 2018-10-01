@@ -1,0 +1,13 @@
+zuul:
+  host:
+    socket-timeout-millis: 120000
+  routes:
+    entitlement-service:
+      path: /entitlements/**
+      url: http://localhost:9000/entitlements/
+spring:
+  application:
+    name: zuulapigateway
+
+server:
+  port: 8090
